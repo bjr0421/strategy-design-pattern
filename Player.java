@@ -24,7 +24,17 @@ public abstract class Player {
 
     }
 
-    //public String play(); 
+    public String play() {
+
+        return offenseBehavior.play();
+
+    } 
+
+    public void turnover() {
+
+        //TODO figure out what goes here
+
+    }
     //TODO Figure out how to use a String method or what to do with it for this assignment
 
 }
