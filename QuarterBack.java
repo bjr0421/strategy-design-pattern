@@ -4,23 +4,35 @@ public class QuarterBack extends Player {
 
     Random randy = new Random();
 
-    public String[] off = {};
+    RunBehavior run = new RunBehavior();
+    PassBehavior pass = new PassBehavior();
+    OffenseBehavior o;
+
 
     public QuarterBack(String name) {
 
         super(name);
-        offenseBehavior = new RunBehavior();
-        defenseBehavior = new SackBehavior();
+        //OffenseBehavior oBehavior;
+        offenseBehavior = o;
+        defenseBehavior = null;
+
 
     }
 
     public void setOffenseBehavior() {
 
-        RunBehavior run = new RunBehavior();
-        PassBehavior pass = new PassBehavior();
-        //String[] option = {run,pass};
+        //RunBehavior run = new RunBehavior();
+        //PassBehavior pass = new PassBehavior();
+        
+        int r = randy.nextInt(2);
 
-        //TODO figure out how to randomize behavior
+        if(r == 1) {
+            o = run;
+        } else {
+            o = pass;
+        }
+
+        
 
     }
 
@@ -30,8 +42,8 @@ public class QuarterBack extends Player {
 
     }
 
-   // public String toString() {
-     //   return name;
-    //}
+    public String toString() {
+        return name;
+    }
     
 }

@@ -8,7 +8,7 @@ public class PassBehavior implements OffenseBehavior{
 
     public String play() {
 
-        return " throws a " + plays[randy.nextInt(5)];
+        return "throws a " + plays[randy.nextInt(5)];
 
     }
     

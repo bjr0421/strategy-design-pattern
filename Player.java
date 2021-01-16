@@ -12,24 +12,29 @@ public abstract class Player {
 
     }
 
-    public void setDefenseBehavior() {
+    public void setDefenseBehavior(DefenseBehavior def) {
 
-        defenseBehavior.play();
+        defenseBehavior = def;
 
     }
 
-    public void setOffenseBehavior() {
+    public void setOffenseBehavior(OffenseBehavior off) {
 
-        offenseBehavior.play();
+        offenseBehavior = off;
 
     }
 
     public String play() {
+        
         if(defense == true) {
-            return offenseBehavior.play();
-        } else {
+            if(defenseBehavior == null){
+                return " is not playing";
+            }
             return defenseBehavior.play();
+        } else {
+            return offenseBehavior.play();
         }
+        
     }
 
     public void turnover() {

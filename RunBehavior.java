@@ -8,7 +8,7 @@ public class RunBehavior implements OffenseBehavior{
 
     public String play() {
 
-        return " runs a " + plays[randy.nextInt(4)];
+        return "runs a " + plays[randy.nextInt(4)];
 
     }
     
