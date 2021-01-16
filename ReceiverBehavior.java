@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class ReceiveBehavior implements OffenseBehavior{
+public class ReceiverBehavior implements OffenseBehavior{
 
     Random randy = new Random();
 
