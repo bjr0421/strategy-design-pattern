@@ -9,6 +9,8 @@ public class QuarterBack extends Player {
     public QuarterBack(String name) {
 
         super(name);
+        offenseBehavior = new RunBehavior();
+        defenseBehavior = new SackBehavior();
 
     }
 
@@ -28,8 +30,8 @@ public class QuarterBack extends Player {
 
     }
 
-    public String toString() {
-        return name;
-    }
+   // public String toString() {
+     //   return name;
+    //}
     
 }

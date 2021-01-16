@@ -25,10 +25,12 @@ public abstract class Player {
     }
 
     public String play() {
-
-        return offenseBehavior.play();
-
-    } 
+        if(defense == true) {
+            return offenseBehavior.play();
+        } else {
+            return defenseBehavior.play();
+        }
+    }
 
     public void turnover() {
 
