@@ -1,22 +1,35 @@
+import java.util.Random;
+
 public class QuarterBack extends Player {
+
+    Random randy = new Random();
+
+    public String[] off = {};
 
     public QuarterBack(String name) {
 
         super(name);
-        //TODO add refs to off and defense behavior
 
     }
 
     public void setOffenseBehavior() {
 
-        //TODO add functionality here
+        RunBehavior run = new RunBehavior();
+        PassBehavior pass = new PassBehavior();
+        //String[] option = {run,pass};
+
+        //TODO figure out how to randomize behavior
 
     }
 
     public void setDefenseBehavior() {
 
-        //TODO add functionality here
+        defenseBehavior = null;
 
+    }
+
+    public String toString() {
+        return name;
     }
     
 }

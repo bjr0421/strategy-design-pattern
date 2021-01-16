@@ -9,13 +9,13 @@ public class Receiver extends Player {
 
     public void setOffenseBehavior() {
 
-        //TODO add functionality here
+        offenseBehavior = new ReceiveBehavior();
 
     }
 
     public void setDefenseBehavior() {
 
-        //TODO add functionality here
+        defenseBehavior = null;
 
     }
     

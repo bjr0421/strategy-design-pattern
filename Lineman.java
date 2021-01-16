@@ -1,21 +1,22 @@
+import java.util.Random;
+
 public class Lineman extends Player {
 
     public Lineman(String name) {
 
         super(name);
-        //TODO set refs to off and def behavior
 
     }
 
     public void setOffenseBehavior() {
 
-        //TODO add functionality here
+        offenseBehavior = new OBlockBehavior();
 
     }
 
     public void setDefenseBehavior() {
 
-        //TODO add functionality here
+        //TODO add defensive behavior
 
     }
     

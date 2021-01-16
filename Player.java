@@ -32,9 +32,12 @@ public abstract class Player {
 
     public void turnover() {
 
-        //TODO figure out what goes here
+        if(defense == true) {
+            defense = false;
+        } else {
+            defense = true;
+        }
 
     }
-    //TODO Figure out how to use a String method or what to do with it for this assignment
 
 }

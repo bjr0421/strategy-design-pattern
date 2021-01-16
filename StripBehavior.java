@@ -2,7 +2,7 @@ public class StripBehavior implements DefenseBehavior{
 
     public String play() {
 
-        return "PLACEHOLDER VALUE";
+        return "Strip a ball from runners hands";
 
     }
     
