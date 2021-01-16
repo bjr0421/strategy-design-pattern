@@ -3,8 +3,8 @@ public abstract class Player {
     protected String name;
     private boolean defense;
 
-    DefenseBehavior defenseBehavior;
-    OffenseBehavior offenseBehavior;
+    protected DefenseBehavior defenseBehavior;
+    protected OffenseBehavior offenseBehavior;
 
     public Player(String name) {
 
