@@ -1,9 +1,17 @@
 import java.util.Random;
 
+/**
+ * The Lineman, a type of Player
+ * @author Brooks Robinson
+ */
 public class Lineman extends Player {
 
     Random randy = new Random();
 
+    /**
+     * Constructs the name and behaviors of a Lineman player
+     * @param name name of player
+     */
     public Lineman(String name) {
 
         super(name);
@@ -12,12 +20,18 @@ public class Lineman extends Player {
 
     }
 
+    /**
+     * Sets the offense behavior to offensive block
+     */
     public void setOffenseBehavior() {
 
         offenseBehavior = new OBlockBehavior();
 
     }
 
+    /**
+     * Sets the defense behavior randomly to block, strip, or sack
+     */
     public void setDefenseBehavior() {
 
         BlockBehavior block = new BlockBehavior();
