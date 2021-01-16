@@ -3,7 +3,5 @@
  * @author Brooks Robinson
  */
 public interface OffenseBehavior {
-    
     public String play();
-
 }

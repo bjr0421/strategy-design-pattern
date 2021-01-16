@@ -4,7 +4,6 @@
  * 
  */
 public abstract class Player {
-
     protected String name;
     private boolean defense;
 
@@ -16,9 +15,7 @@ public abstract class Player {
      * @param name The name of the Player
      */
     public Player(String name) {
-
         this.name = name;
-
     }
 
     /**
@@ -26,9 +23,7 @@ public abstract class Player {
      * @param def The defense behavior of the player
      */
     public void setDefenseBehavior(DefenseBehavior def) {
-
         defenseBehavior = def;
-
     }
 
     /**
@@ -36,9 +31,7 @@ public abstract class Player {
      * @param off The offense behavior of the player
      */
     public void setOffenseBehavior(OffenseBehavior off) {
-
         offenseBehavior = off;
-
     }
 
     /**
@@ -47,16 +40,14 @@ public abstract class Player {
      * @return the defensive behavior, the offense behavior, or "is not playing" depending on the Player's role
      */
     public String play() {
-        
-        if(defense == true) {
-            if(defenseBehavior == null){
+        if( defense == true) {
+            if (defenseBehavior == null) {
                 return "is not playing";
             }
             return defenseBehavior.play();
         } else {
             return offenseBehavior.play();
         }
-        
     }
 
     /**
@@ -64,13 +55,10 @@ public abstract class Player {
      * offense or defense
      */
     public void turnover() {
-
-        if(defense == true) {
+        if (defense == true) {
             defense = false;
         } else {
             defense = true;
         }
-
     }
-
 }

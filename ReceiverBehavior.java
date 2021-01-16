@@ -5,7 +5,6 @@ import java.util.Random;
  * @author Brooks Robinson
  */
 public class ReceiverBehavior implements OffenseBehavior{
-
     Random randy = new Random();
 
     private String[] plays = {"slant route","out route","seem route","screen pass","hail mary"};
@@ -14,10 +13,8 @@ public class ReceiverBehavior implements OffenseBehavior{
      * Appends a random receiver behavior to the end of a player's name
      * @return a random receiver behavior
      */
+    @Override
     public String play() {
-
         return "runs a " + plays[randy.nextInt(5)];
-
     }
-    
 }

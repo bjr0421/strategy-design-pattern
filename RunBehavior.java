@@ -5,7 +5,6 @@ import java.util.Random;
  * @author Brooks Robinson
  */
 public class RunBehavior implements OffenseBehavior{
-
     Random randy = new Random();
 
     private String[] plays = {"drive (up the gut)","draw","pitch","reverse"};
@@ -14,10 +13,8 @@ public class RunBehavior implements OffenseBehavior{
      * Appends a random run behavior to the end of a player's name
      * @return a random run behavior
      */
+    @Override
     public String play() {
-
         return "runs a " + plays[randy.nextInt(4)];
-
     }
-    
 }
