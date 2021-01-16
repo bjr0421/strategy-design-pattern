@@ -8,7 +8,7 @@ public class BlockBehavior implements DefenseBehavior{
 
     public String play() {
 
-        return " block a " + plays[randy.nextInt(4)];
+        return "block a " + plays[randy.nextInt(4)];
 
     }
     

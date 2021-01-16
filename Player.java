@@ -28,7 +28,7 @@ public abstract class Player {
         
         if(defense == true) {
             if(defenseBehavior == null){
-                return " is not playing";
+                return "is not playing";
             }
             return defenseBehavior.play();
         } else {

@@ -8,7 +8,7 @@ public class ReceiverBehavior implements OffenseBehavior{
 
     public String play() {
 
-        return " runs a " + plays[randy.nextInt(5)];
+        return "runs a " + plays[randy.nextInt(5)];
 
     }
     

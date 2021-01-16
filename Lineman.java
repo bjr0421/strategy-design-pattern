@@ -7,8 +7,8 @@ public class Lineman extends Player {
     public Lineman(String name) {
 
         super(name);
-        offenseBehavior = new OBlockBehavior();
-        defenseBehavior = new SackBehavior();
+        setOffenseBehavior();
+        setDefenseBehavior();
 
     }
 
